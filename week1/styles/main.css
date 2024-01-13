@@ -89,7 +89,7 @@ img {
 
     article {
         display: grid;
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
         /* grid-auto-columns: 1fr; */
     }
 
