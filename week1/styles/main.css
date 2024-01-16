@@ -97,6 +97,7 @@ img {
         grid-column: 1/2;
         width: 130px;
         padding-right: 10px;
+        text-align: right;
     }
 
     p {
