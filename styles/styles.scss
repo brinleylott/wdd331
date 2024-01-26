@@ -1,42 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-/* HTML SELECTORS */
-h1 {
-    font-family: 'lora';
-    font-size: 50px;
-}
-h2 a {
-    font-family: 'Instrument Serif';
-    text-decoration: none;
+
+$title: 'lora';
+$header-a: 'Instrument serif';
+$body: helvetica, arial, sans-serif;
+
+@mixin theme($theme: #666) {
     color: #666;
+    text-decoration: none;
 }
 
-h1 a {
-    text-decoration: none;
-    color: #333;
+/* HTML SELECTORS */
+h1 {
+    font: 100% $title;
+    font-size: 50px;
+}
+h2 {
+    a {
+        font: 100% $header-a;
+        text-decoration: none;
+        color: #666;
+        font-weight: bold;
+    }
+}
+
+h1 {
+    a {
+        text-decoration: none;
+        color: #333;
+    }
 }
 body {
     color: #333;
-    font-family: 'Helvetica', 'Arial', 'sans-serif';
+    font: $body;
 }
 
-p a {
-    color: #666;
-    text-decoration: none;
+p {
+    a {
+        @include theme($theme: #666);
+    }
 }
-p a:hover {
-     background-color: #00ddff;
+p {
+    a:hover {
+        background-color: #00ddff;
+   }
 }
 
-li a {
-    color: #666;
-    text-decoration: none;
-    font-family: 'Instrument Serif';
-    font-size: 18px;
-    padding: 2px;
-}
- li a:hover {
-    background-color: #00ddff;
+li {
+    a {
+        color: #666;
+        text-decoration: none;
+        font: 100% $header-a;
+        font-size: 18px;
+        padding: 2px;
+    }
+    a:hover {
+        background-color: #00ddff;
+    }
 }
 
 ul {
@@ -60,7 +80,8 @@ img {
 }
 /* CLASS SELECTORS */
 .post-date {
-    font-family: 'Instrument Serif';
+    font: 100% $header-a;
+    font-weight: bold;
     text-align: right;
     margin-bottom: 7px;
 }
