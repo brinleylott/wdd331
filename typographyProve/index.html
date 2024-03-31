@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="p1">For example, say your developers have come up with the perfect amortization program and you want to 
+        install it on the workgroup server for other systems to remotely mount and use. Because this is a 
+        third-party or custom application, the logical place for it is in /usr/local/appname, possibly with 
+        a link to the program binary in the /usr/local/bin directory (because that's in the path).
+    </p>
+
+    <div class="alert-section">
+        <div class="alert"><p>Alert</p></div>
+        <p class="p2">If given a choice between putting the software package bigprog in the /usr/local/bigprog section and the /opt/bigprog 
+            section, it's hard to choose. Read any relevant exam question closely--the main difference being that the /opt section 
+            is not considered to be sharable, whereas the /usr section is often shared and mounted by client systems.
+        </p>
+    </div>
+    
+    <h1>File Management Commands</h1>
+    <p class="p3">A major section of the 101 exam is dedicated to how to run commands properly with the right options and arguments. 
+        As a good sysadmin, you'll be expected to know how to create, delete, edit, set permissions on, display, move, copy, and 
+        determine the type of files and programs.
+    </p>
+
+    <div class="alert-section">
+        <div class="alert"><p>Alert</p></div>
+        <p class="p4">You must be able to pick proper and working commands out of lists of possibilities, type in appropriate strings 
+        in fill-in-the-blank boxes, and in general show that you've run the programs and utilities in question.
+        </p>
+    </div>
+    
+    <h2>Tips for working with Linux files</h2>
+    <p class="p5">Because most users and sysadmins come from a Windows or other OS background, a quick set of recommendations for 
+        the less-experienced can be of help here:</p>
+    <ul>
+        <li><strong>Hidden files aren't really hidden -</strong> They just begin with a ., such as the .bashrc and .bash_profile files. These are 
+            not viewable by normal users with conventional commands and switches and aren't deleted by commands such as rm -f *.*.
+        </li>
+        <li><strong>Filenames can contain multiple periods or no period characters -</strong> The filenames this.is.a.long.file and thisisalongfile 
+            are perfectly reasonable and possible.
+        <li><strong>Spaces in filenames look nice, but are a pain to type -</strong> Use an _ or a - instead of spaces because it's neater and easier 
+            than prefixing all spaces with a \. (To display a space in a filename, the system shows a space prefixes with a backslash.)
+        </li>
+        </li>
+    </ul>
+    
+</body>
+</html>
